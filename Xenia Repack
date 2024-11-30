@@ -1,0 +1,64 @@
+Lets streamline the emulation sequence
+
+WIN 11, WIN 10 x64 tested
+
+*requirements
+-note editor of your preference "notepad" "note++" will do just fine
+-download "autohotkey" 
+-download "bat to exe converter"
+
+Lets Start
+I will not provide any games you must source your own.
+
+In the files provided i will include an "f11.ahk" file this will remain untouched.
+
+Edit the ".bat" file  with the note editor to include the paths to the following.
+-path to "xenia.exe"
+-path to "default.xex" this should be in your games contents root
+-path to "f11.ahk"
+once editing ".bat" file is complete save and exit notepad, we are done with the ".bat"
+file for now. we will be coming back to this later, when we make the ".exe" file.
+
+Assuming you installed "autohotkey" from its source you will need to run "f11.ahk" once
+it may be an outdated version, once you run the "f11.ahk" file once it should display a 
+message that states there is a newer prerequisite or new version available, download and it
+should install automatically. hit exit on the following window we are now complete with this 
+portion of the process.
+
+Now lets move on over to the "bat to exe converter" assuming you have already installed it open
+it up then hit the icon "open" locate the ".bat" file from the start of this tutorial and open, 
+now you can hit "convert" and this will create a ".exe" file just specify where you'd like to 
+save the ".exe" file maybe on the "Desktop". If you waited and read there is still an optional 
+step not necessary but it makes everything much more clean. To the right side of the program 
+"bat to exe converter" there's a setting called "exe-format" click on it and select 
+"32 bit | console(invisible)" or "64 bit | console(invisible)" this will hide the cmd window that
+pops up along side the execution of the ".exe" file if you dont mind an extra window open you 
+can skip this last step altogether.
+
+You have successfully created a single file executable that can be placed anywhere on your desktop
+if you use "STEAM" you can simply add it to your games list for a more streamlined environment or 
+you can simply keep it on the desktop for easy accessibility, and with that we are FINISHED, ENJOY!
+
+
+*PS
+-If you have more than 1 folder containing ".xex" files edit the "Xenia bat creation for xex.bat" 
+this will read through all folders containing ".xex" files and create a folder called "Bootfiles" 
+ensuring the out put path reads like "C:\User\YourProfile\Location\You\Want\BootFiles" just make sure 
+the "\Bootfiles" is added to the end of the path this will automatically create a directory and put 
+all ".bat" files in it.
+
+in order for this to work you might need to rename "default.xex" to another name as all files will
+automatically be converted to ".bat" files and by default ".xex" files are all called "default.xex 
+ensuring you wrote the ".bat" file correctly double-clicking said file should launch Xenia just 
+close and do the rest of the instructions listed above.
+
+If you do not create a "Bootfiles" folder look through your output directory if its set to scan 
+multiple directories the ".bat" file may be in the games content folder or another location you 
+set the output path to. 
+ex: (game folder containing xex file) "default.xex" "default.bat"
+
+Additionally you might need to edit path to autohotkey if f11 function does not automate in final 
+".exe" format so locate the path to "Autohotkey.exe" in my provided ".bat" file i have included the 
+path to the "x64" version of the ".exe" file if this path does not work adjust to your PC's correct path
+
+Repackaged by NOBODY
